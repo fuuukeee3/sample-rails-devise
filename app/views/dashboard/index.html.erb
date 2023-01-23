@@ -28,6 +28,7 @@
         <a class="navbar-item" href="admin.html">
           Reports
         </a>
+        <%= link_to 'Sign out', destroy_user_session_path, data: { turbo_method: :delete, turbo_confirm: "Are you Sure?" }, class: "navbar-item" %>
       </div>
 
     </div>
